@@ -1,0 +1,85 @@
+aside.col-md-4.sidebar.module
+  .sidebar-box.clearfix
+    .headline-hr
+      .stripped
+      h3.headline-hr__title Síguenos en:
+    .social-bar
+      .social-bar__item.social-bar__item--fb
+        a(href="#", target="_blank").social-bar__icon.social-bar__icon--fb: i.fa.fa-facebook
+        .social-button
+          .fb-like(data-href='https://www.facebook.com/707TacticalGear?fref=ts', data-layout='button', data-action='like', data-show-faces='true', data-share='false')
+
+      .social-bar__item.social-bar__item--tw
+        a(href="#", target="_blank").social-bar__icon.social-bar__icon--tw: i.fa.fa-twitter
+        .social-button
+          a.twitter-follow-button(href='https://twitter.com/707TacticalGear', data-show-count='false', data-lang='en')
+              | Follow @707TacticalGear
+              script(type='text/javascript').
+                window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src= "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+                }(document, "script", "twitter-wjs"));
+  .sidebar-box.clearfix.recent-articles
+    .headline-hr
+      .stripped
+      h3.headline-hr__title artículos recientes
+    .row.media
+      .col-md-4.col-sm-4.col-xs-6
+        a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+      .col-md-8.col-sm-8.col-xs-6
+        header.media__header: h3: a(href="#") Titulo del Post
+        span.media__timestamps Publicado el 13 de Marzo, 2014
+    .row.media
+      .col-md-4.col-sm-4.col-xs-6
+        a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+      .col-md-8.col-sm-8.col-xs-6
+        header.media__header: h3: a(href="#") Titulo del Post
+        span.media__timestamps Publicado el 13 de Marzo, 2014
+    .row.media
+      .col-md-4.col-sm-4.col-xs-6
+        a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+      .col-md-8.col-sm-8.col-xs-6
+        header.media__header: h3: a(href="#") Titulo del Post
+        span.media__timestamps Publicado el 13 de Marzo, 2014
+  .sidebar-box.clearfix.blog-tabs
+    div(role='tabpanel')
+      ul.nav.nav-tabs(role='tablist').stripped
+        li.active(role='presentation')
+          a(href='#blog-favorites', aria-controls='blog-favorites', role='tab', data-toggle='tab'): h4.tab-title Favoritos
+        li(role='presentation')
+          a(href='#blog-tags', aria-controls='blog-tags', role='tab', data-toggle='tab'): h4.tab-title Etiquetas
+
+      .tab-content
+        #blog-favorites.tab-pane.active(role='tabpanel')
+          .row.media
+            .col-md-4.col-sm-4.col-xs-6
+              a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+            .col-md-8.col-sm-8.col-xs-6
+              header.media__header: h3: a(href="#") Titulo del Post
+              span.media__timestamps Publicado el 13 de Marzo, 2014
+          .row.media
+            .col-md-4.col-sm-4.col-xs-6
+              a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+            .col-md-8.col-sm-8.col-xs-6
+              header.media__header: h3: a(href="#") Titulo del Post
+              span.media__timestamps Publicado el 13 de Marzo, 2014
+          .row.media
+            .col-md-4.col-sm-4.col-xs-6
+              a(href="#" class="media__image"): img(src="images/sixka-slide-test.jpg", alt="").img-responsive
+            .col-md-8.col-sm-8.col-xs-6
+              header.media__header: h3: a(href="#") Titulo del Post
+              span.media__timestamps Publicado el 13 de Marzo, 2014
+        #blog-tags.tab-pane(role='tabpanel')
+          ul.list-unstyled.sidebar-tags
+            li.sidebar-tags__item: a(href="#", target="_blank") link
+            li.sidebar-tags__item: a(href="#", target="_blank") link
+            li.sidebar-tags__item: a(href="#", target="_blank") link
+            li.sidebar-tags__item: a(href="#", target="_blank") link
+
+  .sidebar-box.clearfix.social-box
+    .fb-like-box(data-href='https://www.facebook.com/707TacticalGear', data-colorscheme='light', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
+

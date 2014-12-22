@@ -1,0 +1,138 @@
+body
+  background $color-black-4
+
+.wrapper
+  width 100%
+  height 100% !important
+  min-height 100%
+  position relative
+  background url('../images/sixka-bg.jpg') no-repeat center top
+  background-size 100%
+
+.page-container
+  background white
+  height auto
+  overflow hidden
+  padding 0 1em
+  box-shadow 0px 0px 10px 0px rgba(0,0,0,0.75)
+
+.main
+  padding 0 1em
+  .module
+    margin-top $margin-general * 0.5
+    margin-bottom $margin-general
+  .media
+    margin-bottom $margin-general
+
+.hero-slider-fader
+  background: linear-gradient(rgba($color-black-4, 0), $color-black-4)
+  height 100%
+  width 100%
+  max-width 100%
+  box-sizing border-box
+  *
+    color white
+.hero-slider-caption
+  padding 1em 2em
+  position absolute
+  bottom 0
+.rsMinW
+  .rsNav
+    top 1.5em
+  .rsArrow
+    top 0.75em
+  .rsArrowRight
+    right 1.5em
+  .rsArrowLeft
+    right 3.5em
+  .rsBullets
+    right 7em
+    overflow initial
+    bottom initial
+  .rsBullet
+    padding 0 0.5em
+    span
+      width 8px
+      height 8px
+  .rsGCaption
+    display none
+
+
+.media
+  > h1 , h2, h3, h4, h5 ,h6
+    font-family $base-font-sans
+    text-transform none
+    color $color-black-2
+    margin 0
+    a
+      color $color-black-2
+
+.media__header
+  > h3
+    font-size $base-font-size
+.media__header--important
+  > h2
+    font-size $base-font-size * 1.5em
+.media__timestamps
+  font-size $base-font-size
+  font-style italic
+  display block
+  color $color-black-1
+  margin-bottom 1em
+.media__image
+  display inline-block
+  margin-bottom $margin-general * 0.5
+
+
+.headline-hr
+  display block
+  margin-bottom $margin-general * 0.5
+  .stripped
+    position relative
+    top 1.25em
+  > .headline-hr__title
+    position relative
+    margin 0
+    display inline-block
+    width auto
+    padding 0.5em 1em 0.5em 0
+    background white
+    font-size $base-font-size
+
+.media
+  .media__text
+    margin $margin-general 0
+  .media__tags
+    margin-bottom $margin-general * 0.5
+    &.stripped
+      padding 0.5em
+    > .sidebar-tags
+      margin-bottom 0
+      .sidebar-tags__item
+        background white
+        *
+          color $color-black-4
+
+
+@media only screen and (min-width : 320px)
+  .hero-slider-caption
+    > h4
+      font-size $base-font-size * 1.2
+      letter-spacing 0.1em
+    p
+      display none
+  .rsMinW
+    .rsBullets
+      display none
+@media only screen and (min-width : 480px)
+  .hero-slider-caption
+    > h4
+      font-size $base-font-size * 1.5
+      letter-spacing 0.1em
+    p
+      font-size 13px
+      display block
+@media only screen and (min-width : 768px)
+  .rsMinW
+    .rsBullets
+      display block

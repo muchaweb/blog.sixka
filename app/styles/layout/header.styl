@@ -1,0 +1,198 @@
+$width-logo = 193px
+$height-logo = 93px
+
+#header
+  padding 0 1em
+  *
+    box-sizing border-box
+  hr
+    margin-top 0
+.brand
+  float left
+  text-align left
+.brand__logo
+  display inline-block
+  background url('../images/siska-logo.jpg') no-repeat
+  margin 0
+  padding 0
+
+  width $width-logo
+  height $height-logo
+.brand__link
+  @extends .brand__logo
+  background transparent
+  text-indent 100%
+  white-space nowrap
+  overflow hidden
+
+.top-bar
+  float right
+  width 70%
+  text-align right
+  margin 1em 0
+.lang-switch,
+.site-search
+  display inline-block
+  vertical-align middle
+.navi
+  @extends .top-bar
+  margin 0
+.menu
+  display block
+  float right
+  margin 0
+  a
+    color $color-black-4
+    display block
+    padding 0 1em
+    text-transform uppercase
+    font-size $base-font-size
+    font-family $base-font-bolder
+.menu__item
+  display inline-block
+  vertical-align middle
+.menu__item--last
+  a
+    padding-right 0
+
+
+.lang-switch
+  width 10%
+  margin-right 0.5em
+  text-align center
+  border 1px solid $color-black-0
+.lang-switch__item
+  @extends .menu__item
+  font-family $base-font-bolder
+  font-size $base-font-size
+  line-height $base-font-size * 2.15
+  text-transform uppercase
+  color $color-black-0
+  width 50%
+.lang-switch__item--last
+  border-left 1px solid $color-black-0
+.lang-switch__item--active
+  color $color-black-3
+
+
+.site-search
+  width 40%
+  position relative
+  border 1px solid $color-black-0
+  > form
+    margin 0
+.site-search__input
+  display block
+  position relative
+  width 100%
+  height 30px
+  font-size $base-font-size
+  padding 0.3em
+  border none
+  outline none
+.site-search__submit
+  color white
+  background $color-black-3
+  border-color $color-black-4
+  position absolute
+  top 0
+  right 0
+  width 30px
+  height 31px
+
+
+
+@media only screen and (min-width : 320px)
+  body
+    background #534741
+  .brand,
+  .top-bar
+  .navi
+    width 100%
+    float left
+    text-align center
+  .top-bar-inner
+    .lang-switch
+      width 20%
+    .site-search
+      width 70%
+  .menu
+    display inline-block
+    float none
+    margin-bottom 1em
+    a
+      display block
+      padding 0 0.25em
+
+@media only screen and (min-width : 480px)
+
+  .brand,
+  .top-bar
+  .navi
+    width 100%
+    float left
+    text-align center
+  .menu
+    display inline-block
+    float none
+    margin-bottom 1em
+    a
+      padding 0 1em
+  .top-bar-inner
+    .lang-switch
+      width 20%
+    .site-search
+      width 45%
+  .menu__item--last
+    a
+      padding-right 0
+
+@media only screen and (min-width : 768px)
+
+  .brand
+    width 30%
+    text-align right
+  .top-bar,
+  .navi
+    width 70%
+    text-align right
+  .top-bar-inner
+    width 100%
+    float right
+    .site-search
+      width 55%
+  .menu__item--last
+    a
+      padding-right 0
+@media only screen and (min-width : 992px)
+
+  .brand
+    width 30%
+    text-align left
+  .top-bar,
+  .navi
+    width 70%
+  .top-bar-inner
+    width 70%
+    float right
+    .site-search
+      width 60%
+  .menu__item--last
+    a
+      padding-right 0
+ @media only screen and (min-width : 1200px)
+
+  .brand
+    width 30%
+    text-align left
+  .top-bar,
+  .navi
+    width 70%
+  .top-bar-inner
+    width 70%
+    float right
+    .site-search
+      width 50%
+  .menu__item--last
+    a
+      padding-right 0

@@ -1,0 +1,22 @@
+header#header
+  .clearfix
+    .brand
+      h1.brand__logo: a(href="#" class="brand__link") Siska
+    .top-bar
+      .top-bar-inner
+        .lang-switch
+          a(href="#" class="lang-switch__item lang-switch__item--active") es
+          a(href="#" class="lang-switch__item" class="lang-switch__item--last") en
+        .site-search
+          form(action="#" class="form")
+            input(type="search" placeholder="Ingresa aquí tu búsqueda" class="site-search__input")
+            button.site-search__submit
+              i.fa.fa-search
+    nav.navi
+      ul.list-unstyled.menu
+        li.menu__item: a(href="#") Inicio
+        li.menu__item: a(href="#") Nosotros
+        li.menu__item: a(href="#") Productos
+        li.menu__item: a(href="#") Blog
+        li.menu__item.menu__item--last: a(href="#") Contacto
+  span.stripped

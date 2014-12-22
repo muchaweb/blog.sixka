@@ -1,0 +1,106 @@
+.sidebar-box
+  margin-bottom $margin-general
+  *
+    box-sizing border-box
+
+.social-bar
+  width 100%
+  position relative
+  text-align center
+  .social-bar__item
+    display inline-block
+    vertical-align middle
+    height 120px
+    background lighten($color-black-0, 80%)
+    padding 1em
+    text-align center
+    &.social-bar__item--fb
+      width 30%
+    &.social-bar__item--tw
+      width 68%
+  .social-bar__icon
+    display inline-block
+    width 32px
+    height 32px
+    color white
+    background transparent
+    margin 1em 0
+    &:hover
+      text-decoration none
+  .social-bar__icon--fb
+    background-color $color-facebook
+  .social-bar__icon--tw
+    background-color $color-twitter
+  .fa
+    line-height 32px
+  .social-button
+    display inline-block
+    width 100%
+    text-align center
+    position relative
+.recent-articles
+  > .media
+    margin-bottom 0
+.social-box
+  border 1px solid lighten($color-black-0, 50%)
+  padding 1em
+  text-align center
+
+
+.blog-tabs
+  border 1px solid lighten($color-black-0, 50%)
+  .nav
+    &.stripped
+      padding-bottom 0
+    > li
+      &:first-child
+        margin-left 0.5em
+      &.active, &:hover
+        background white
+        border-bottom none
+        > a
+          color $color-black-4
+          border none
+          background white
+      > a
+        border none
+        color $color-black-4
+        padding 0.5em
+  .tab-title
+    margin 0
+    font-size $base-font-size
+  .tab-content
+    padding 1em
+
+.sidebar-tags
+  > li
+    display inline-block
+    vertical-align middle
+    &:first-child
+      margin-right 1em
+  > .sidebar-tags__item
+
+    background $color-black-3
+    &:hover
+      background lighten($color-black-3, 25%)
+  a
+    display block
+    padding 0.5em 1.5em
+    color white
+    &:hover
+      text-decoration none
+
+
+@media only screen and (min-width : 320px)
+  .social-bar
+    .social-bar__item
+      width 100%
+      margin-bottom 0.5em
+@media only screen and (min-width : 768px)
+  .social-bar
+    .social-bar__item
+      margin-bottom 0
+      &.social-bar__item--fb
+        width 30%
+      &.social-bar__item--tw
+        width 68%
